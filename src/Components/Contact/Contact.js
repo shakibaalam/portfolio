@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FcGoogle } from 'react-icons/fc';
 
 const Contact = () => {
     const form = useRef();
@@ -19,7 +20,7 @@ const Contact = () => {
 
     return (
         <div className='my-10 lg:w-96 mx-auto'>
-            <h2 className='mb-10 text-3xl font-bold text-secondary text-center'>Contact Me</h2>
+            <h2 className='mb-10 text-3xl font-bold text-secondary text-center flex'>Contact Me <FcGoogle className='mt-1 ml-2' /></h2>
             <div className=''>
                 <form className='w-full' ref={form} onSubmit={sendEmail}>
 

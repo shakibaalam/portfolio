@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Education from './Education';
+import Footer from './Footer';
 import ProjectSection from './ProjectSection';
 import Skill from './Skill';
 
@@ -12,6 +13,7 @@ const Home = () => {
             <Skill></Skill>
             <ProjectSection></ProjectSection>
             <Education></Education>
+            <Footer></Footer>
         </div>
     );
 };
