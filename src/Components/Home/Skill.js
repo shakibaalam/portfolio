@@ -44,7 +44,7 @@ const Skill = () => {
             <h2 className='text-3xl text-primary font-semibold lg:mx-32'>My Skills <hr /></h2>
             <div className='lg:mx-32 my-10'>
                 <div className='grid lg:grid-cols-2 grid-cols-1'>
-                    <div className=" mx-auto">
+                    <div className="mx-auto">
                         {
                             frontendSkills.map((item, index) => (
                                 <SkillItem title={item.title} key={index} percentage={item.percentage}></SkillItem>

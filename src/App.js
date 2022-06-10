@@ -1,6 +1,8 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
@@ -9,8 +11,13 @@ import Project from './Components/Home/Project';
 import NavBar from './Components/NavBar/NavBar';
 import NotFound from './Components/NotFound';
 import Projects from './Components/Projects/Projects';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <NavBar>
